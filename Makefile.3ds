@@ -27,16 +27,16 @@ include $(DEVKITARM)/3ds_rules
 #     - icon.png
 #     - <libctru folder>/default_icon.png
 #---------------------------------------------------------------------------------
-TARGET   := ftpd
+TARGET   := homebrew-helper
 BUILD    := build
 SOURCES  := source
 DATA     := data
 INCLUDES := include
 ROMFS    :=
 
-APP_TITLE       := Super ftpd II Turbo
-APP_DESCRIPTION := v$(VERSION)
-APP_AUTHOR      := mtheall
+APP_TITLE       := Homebrew Helper
+APP_DESCRIPTION := ftpd with support for auto-launching 3dsx files.
+APP_AUTHOR      := mtheall, wipsdafox
 
 ICON            := meta/icon.png
 BNR_IMAGE       := meta/banner.png

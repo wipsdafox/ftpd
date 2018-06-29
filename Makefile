@@ -1,4 +1,4 @@
-.PHONY: all 3dsx cia clean linux
+.PHONY: all 3dsx cia clean
 
 export GITREV  := $(shell git rev-parse HEAD 2>/dev/null | cut -c1-8)
 export VERSION_MAJOR := 2
@@ -17,10 +17,6 @@ all: 3dsx
 
 cia:
 	@$(MAKE) -f Makefile.3ds cia
-	
-linux:
-	@$(MAKE) -f Makefile.linux
 
 clean:
 	@$(MAKE) -f Makefile.3ds   clean
-	@$(MAKE) -f Makefile.linux clean
